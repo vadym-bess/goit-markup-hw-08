@@ -1,9 +1,6 @@
 .our-team {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 30px;
 
-         &__profesions {
+    &__profesions {
             margin-bottom: 16px;
             text-align: center;
             color: var(--text-color);
@@ -15,13 +12,25 @@
             letter-spacing: 0.03em;
         }
 
-         &__card {
-            padding-bottom: 30px;
-            margin-right: 0;
-            width: 270px;
+                &__card {
+                    display: block;
+                    padding-bottom: 30px;
+                    margin-right: 0;
+                    width: 100%;
         
-        }
+                }
+
+                
+
+                @media (min-width: 768px) {
+                    display: flex;
+                    justify-content: space-evenly;
+                    gap: 30px;
+                    flex-basis: calc(100% * 2 /4);
+                }
+                                 
 }
+    
 
 
 .our-team>li {
@@ -31,7 +40,8 @@
 
 }
 
+
+
 .main-section-bgc {
     background-color: var(--grey-bgc);
 }
-
