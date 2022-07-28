@@ -1,0 +1,31 @@
+.benefits {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.list-item{
+
+     &__icon-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        background-color: var(--portfolio-buttons-bgc);
+    }
+
+    &__icon-antenna,
+    &__icon-clock,
+    &__icon-computer,
+    &__icon-astronaut {
+        width: 65.32px;
+        height: 70px;
+        fill: var(--title-text-color);
+    }
+
+}
+
+ 
