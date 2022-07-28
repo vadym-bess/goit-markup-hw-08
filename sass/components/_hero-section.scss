@@ -3,7 +3,7 @@
     margin: 0 auto;
 
 
-    &__title {
+&__title {
         max-width: 696px;
         display: inline-block;
         margin-bottom: 30px;
@@ -60,6 +60,7 @@
     &:focus,
     &:hover,
     &:active {
-        background-color: var(--button-bgc-hover);
+    background-color: var(--button-bgc-hover);
     }
 }
+
