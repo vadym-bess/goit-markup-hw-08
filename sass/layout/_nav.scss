@@ -1,9 +1,11 @@
-.nav {
+/*.nav {
     display: flex;
 }
 
 .nav-links {
     @include flex-centered;
+
+
 }
 
 .menu-links {
@@ -12,6 +14,8 @@
     align-items: center;
     justify-content: space-evenly;
     margin-left: 93px;
+
+    
 
          &__nav-link {
             position: relative;
@@ -45,6 +49,9 @@
             background-color: var(--accent-color);
             border-radius: 2px;
         }
+
+                
+            
 }
 
 
@@ -96,4 +103,4 @@
             color: var(--accent-color);
         }
 }
-
+*/
