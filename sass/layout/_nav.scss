@@ -57,12 +57,22 @@
 
 
 .adress-head {
+    display: none;
+    
+
     @media (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: 15px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 65px;
+    }  
+    
+    @media (min-width: 1200px) {
+            display: flex;
+            flex-direction: row;
+            margin-left: 305px;
     }
+    
+    
 
                     &__tel {
                         display: none;
@@ -86,9 +96,21 @@
                                 letter-spacing: 0.02em;
                                 text-decoration: none;
                             }
+
+                            @media (min-width: 1200px) {
+                                    display: flex;
+                                    flex-direction: row;
+                                    text-decoration: none;
+                                    color: var(--text-color);
+                                    font-family: 'Roboto', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 1.14;
+                                    align-items: center;
             }
             
-
+        }
             &__link-mail{
                     display: none;
                     gap: 10px;
@@ -137,9 +159,9 @@
                          display: flex;
                          align-items: center;
                          fill: var(--text-color);
-                         margin-left: 84px;
                          margin-bottom: 10px;
-                         margin-right: 15px;
+
+                        
                      }
                  }
         
@@ -150,7 +172,7 @@
                  &__icon-smartphone:hover {
                      fill: var(--accent-color);
                  }
-                }
+}
 .adress-head li:not(:last-child) {
 
     @media (min-width: 768px) {
