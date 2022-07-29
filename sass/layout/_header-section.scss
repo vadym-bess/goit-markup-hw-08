@@ -2,26 +2,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     border-bottom: 1px solid var(--head-border-color);
+
+
 }
 
-.adress-head{
-
-        &__item {
-            display: flex;
-            align-items: center;
-            fill: var(--text-color);
-        }
-    
-        &__item:hover {
-            fill: var(--accent-color);
-        }
-    
-        &__icon-smartphone:hover {
-            fill: var(--accent-color);
-        }
-}
-
-
-.adress-head li:not(:last-child) {
-    margin-right: 50px;
-}

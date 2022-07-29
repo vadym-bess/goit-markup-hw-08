@@ -1,6 +1,13 @@
 .our-team {
 
-    &__profesions {
+    @media (min-width: 768px) {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            width: 50%;
+        }
+
+            &__profesions {
             margin-bottom: 16px;
             text-align: center;
             color: var(--text-color);
@@ -12,35 +19,22 @@
             letter-spacing: 0.03em;
         }
 
-                &__card {
+                    &__card {
                     display: block;
                     padding-bottom: 30px;
                     margin-right: 0;
                     width: 100%;
         
-                }
-
-                
-
-                @media (min-width: 768px) {
-                    display: flex;
-                    justify-content: space-evenly;
-                    gap: 30px;
-                    flex-basis: calc(100% * 2 /4);
-                }
+                }            
                                  
 }
     
-
-
 .our-team>li {
     background-color: var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
 }
-
-
 
 .main-section-bgc {
     background-color: var(--grey-bgc);
