@@ -78,7 +78,7 @@ body {
   background-color: var(--secondary-section-background);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer-logo {
     margin-left: 163px;
     margin-bottom: 20px;
@@ -115,7 +115,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer-first-row__adress {
     margin-left: 124px;
     margin-bottom: 8px;
@@ -132,7 +132,7 @@ body {
   font-size: 14px;
   line-height: 1.7;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer-first-row__mail {
     margin: 50%;
     margin-bottom: 8px;
@@ -149,7 +149,7 @@ body {
   font-size: 14px;
   line-height: 1.7;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer-first-row__tel {
     margin: 50%;
   }
@@ -167,7 +167,7 @@ body {
     margin-left: 70px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer-second-row {
     margin-top: 60px;
   }
@@ -183,7 +183,7 @@ body {
   gap: 10px;
   margin-bottom: 0px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer-second-row__socials {
     margin-left: 50%;
     margin-bottom: 60px;
@@ -204,7 +204,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer-second-row__title {
     margin-left: 145px;
   }
@@ -250,7 +250,20 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  .footer-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
   .footer-inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -274,7 +287,7 @@ body {
   margin-left: auto;
   margin-right: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .form-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -323,7 +336,7 @@ body {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .form-footer-conteiner__input {
     width: 450px;
     height: 50px;
@@ -356,7 +369,7 @@ body {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) scale(0.2);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) scale(0.2);
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .form-footer-button {
     margin-left: 140px;
   }

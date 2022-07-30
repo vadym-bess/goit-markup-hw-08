@@ -5,7 +5,7 @@
 
 .footer-logo{
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         margin-left: 163px;
         margin-bottom: 20px;
     }
@@ -33,13 +33,10 @@
 .footer-first-row {
     display: block;
 
-    @media (max-widt: 768px) {
-        
-    }
 
         &__adress {
 
-           @media (max-width: 768px) {  
+           @media (max-width: 767px) {  
                    margin-left: 124px;
                    margin-bottom: 8px;
                 }
@@ -57,7 +54,7 @@
     
         &__mail {
             
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                     margin: calc(100%/2);
                     margin-bottom: 8px;
                 }
@@ -75,7 +72,7 @@
     
         &__tel {
 
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                     margin: calc(100%/2);
             }
 
@@ -107,7 +104,7 @@
         margin-left: 70px;
         
     }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             margin-top: 60px;
     
         }
@@ -120,7 +117,7 @@
             gap: 10px;
             margin-bottom: 0px;
             
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                     margin-left: 50%;
                     margin-bottom: 60px;
             
@@ -141,7 +138,7 @@
             margin-bottom: 20px;
             
          
-                    @media (max-width: 768px) {
+                    @media (max-width: 767px) {
                             margin-left: 145px;
                     
                         }
@@ -189,10 +186,12 @@
 
 
     @media (min-width:768px) {
-        
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         display: flex;
         justify-items: center;
         flex-direction: column;
@@ -207,7 +206,7 @@
     margin-right: 0;
 
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
             display: flex;
             flex-direction: column;
             @include flex-centered;
@@ -246,7 +245,7 @@
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.6);
 
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 width: 450px;
                 height: 50px;
                 margin-left: 0;
@@ -282,7 +281,7 @@
     color: var(--secont-title-text-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) scale(0.2);
 
-    @media (max-width: 768px){
+    @media (max-width: 767px){
         margin-left: 140px;
     }
 
