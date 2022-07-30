@@ -28,11 +28,38 @@
     
 }
 
+.footer-adress__thumb{
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        @include flex-centered;
+    }
+
+    @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 
 
 .footer-first-row {
     display: block;
 
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        @include flex-centered;
+        margin-left: -15px;
+    }
+
+    @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0px;
+    }
 
         &__adress {
 
@@ -55,7 +82,7 @@
         &__mail {
             
             @media (max-width: 767px) {
-                    margin: calc(100%/2);
+                    margin-left: 47%;
                     margin-bottom: 8px;
                 }
 
@@ -74,6 +101,7 @@
 
             @media (max-width: 767px) {
                     margin: calc(100%/2);
+                    
             }
 
             margin-top: 0;
@@ -100,14 +128,28 @@
     display: inline-block;
     margin-left: 0;
       
-   @media (min-width: 768px) {
-        margin-left: 70px;
-        
-    }
-        @media (max-width: 767px) {
-            margin-top: 60px;
+        @media (min-width: 480px) {
+                display: flex;
+                flex-direction: column;
+                @include flex-centered;
+                margin-top: 60px;
+                margin-left: 120px
+            }
     
-        }
+        @media (min-width: 768px) {
+               display: flex;
+               flex-direction: column;
+               margin-top: 0;
+               @include flex-centered;
+               
+            }
+
+        @media (min-width: 1200px) {
+                display: flex;
+                align-items: flex-start;
+                margin-left: 0;
+        
+            }
 
 
          &__socials {
@@ -116,10 +158,16 @@
             justify-content: center;
             gap: 10px;
             margin-bottom: 0px;
+
+            @media (min-width: 480px) {
+                    display: flex;
+                    justify-content: center;
             
-            @media (max-width: 767px) {
-                    margin-left: 50%;
-                    margin-bottom: 60px;
+                }
+            
+            @media (min-width: 768px) {
+                    margin-left: 0;
+                    
             
                 }
         }
@@ -136,13 +184,12 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             margin-bottom: 20px;
-            
-         
-                    @media (max-width: 767px) {
-                            margin-left: 145px;
-                    
-                        }
-            
+                   
+                    @media (min-width: 768px) {
+                            display: flex;
+                            @include flex-centered;
+                            
+                    }
                 }
 
         
@@ -189,6 +236,8 @@
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
+        
     }
 
     @media (max-width: 767px) {
@@ -198,19 +247,40 @@
         align-items: baseline;
         justify-content: space-between;
     }
+
+    @media (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        gap: auto;
+    }
 }
 
 .form-footer {
     display: block;
-    margin-left: auto;
+    margin-left: 93px;
     margin-right: 0;
 
-
-    @media (max-width: 767px) {
+    @media (min-width: 480px) {
             display: flex;
             flex-direction: column;
             @include flex-centered;
             margin-left: 0;
+            margin-top: 60px;
+        }
+
+    @media (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            @include flex-centered;
+            margin-left: 0;
+        }
+
+    @media (min-width: 1200px) {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 0;
+            margin-left: 0;
+           
         }
 
      &__title {
@@ -223,13 +293,29 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--secont-title-text-color);
+
+        
+
+        @media (min-width: 768px) {
+                display: flex;
+                @include flex-centered;
+                             
+             }
     }
+
+    
 
    
 }
 
 .form-footer-conteiner {
     position: relative;
+
+    @media (min-width: 1200px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
 
          &__input {
             width: 358px;
@@ -245,13 +331,30 @@
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.6);
 
-            @media (max-width: 767px) {
+            @media (min-width: 480px) {
+                    display: flex;
+                    flex-direction: column;
+                    @include flex-centered;
+                    margin-left: 0;
+                    width: 450px;
+                }
+
+            @media (min-width: 768px){
+                display: flex;
+                @include flex-centered;
                 width: 450px;
                 height: 50px;
                 margin-left: 0;
                 margin-bottom: 20px;
             }
-        }
+
+            @media (min-width: 1200px) {
+                margin-bottom: 0;
+             }
+
+            
+                
+}
     
         &__input:hover,
         &__input:focus,
@@ -281,9 +384,22 @@
     color: var(--secont-title-text-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) scale(0.2);
 
-    @media (max-width: 767px){
-        margin-left: 140px;
+    @media (min-width: 480px) {
+        display: flex;
+        @include flex-centered;
+        margin-left: 125px;
+        margin-top: 20px;
     }
+    
+    @media (min-width: 768px){
+        margin-left: 130px;
+    }
+
+        @media (min-width: 1200px){
+            position: relative;
+           margin-top: 0;
+            margin-left: 12px;
+        }
 
         &:hover,
         &:focus {
@@ -298,13 +414,25 @@
             right: 18px;
             top: 50%;
             transform: translateY(-50%);
+
+            @media (min-width: 480px) {
+                left: 63%;
+                top: 95px;
+            }
     
-            @media (max-width: 768px) {
-                    left: 65%;
+            @media (min-width: 768px) {
+                    left: 63%;
                     top: 95px;
                     
                 }
-        }
-}
 
+            @media (min-width: 1200px) {
+                    position: absolute;
+                    left: 65%;
+                    top: 95px;
+        
+            }
+
+}
+}
 
