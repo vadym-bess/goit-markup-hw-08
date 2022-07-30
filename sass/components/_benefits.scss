@@ -1,16 +1,26 @@
 .benefits {
-    display: block;
-    justify-content: space-evenly;
-    gap: 30px;
-    margin: -15px;
+    
+    
+    @media (max-width:480px) {
+           display: flex;
+           flex-direction: column;
+           gap: 30px;
+    }
+
+    
+    
     
 }
 
 .list-item{
 
+    
+
+
 
      &__icon-section {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         border-radius: 4px;
@@ -18,15 +28,18 @@
         background-color: var(--portfolio-buttons-bgc);
         width: 450px;
         height: 120px;
-        margin: -15px;
 
-        @media (min-width: 768px) {
-                display: flex;
-                flex-wrap: wrap;
-                width: calc((100% - 4 * 15px) / 2);
-                width: 354px;
-                height: 120px;
-            }
+       
+    }
+
+        &__icon-antenna,
+        &__icon-clock,
+        &__icon-computer,
+        &__icon-astronaut {
+            width: 65.32px;
+            height: 70px;
+            fill: var(--title-text-color);
+
     }
 
     .text{
@@ -35,15 +48,8 @@
         height: auto;
     }
 
-    &__icon-antenna,
-    &__icon-clock,
-    &__icon-computer,
-    &__icon-astronaut {
-        width: 65.32px;
-        height: 70px;
-        fill: var(--title-text-color);
-    }
-
 }
+
+
 
  
