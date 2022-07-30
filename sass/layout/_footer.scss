@@ -1,9 +1,14 @@
-/*.footer {
+.footer {
     padding: 60px 0;
     background-color: var(--secondary-section-background);
 }
 
 .footer-logo{
+
+    @media (max-width: 768px) {
+        margin-left: 163px;
+        margin-bottom: 20px;
+    }
 
     &__web--blue {
         display: flex;
@@ -28,7 +33,17 @@
 .footer-first-row {
     display: block;
 
+    @media (max-widt: 768px) {
+        
+    }
+
         &__adress {
+
+           @media (max-width: 768px) {  
+                   margin-left: 124px;
+                   margin-bottom: 8px;
+                }
+
             margin: 0;
             margin-bottom: 9px;
             color: var(--secont-title-text-color);
@@ -41,6 +56,12 @@
         }
     
         &__mail {
+            
+            @media (max-width: 768px) {
+                    margin: calc(100%/2);
+                    margin-bottom: 8px;
+                }
+
             margin-top: 0;
             margin-bottom: 9px;
             color: var(--footer-adress-color);
@@ -53,6 +74,11 @@
         }
     
         &__tel {
+
+            @media (max-width: 768px) {
+                    margin: calc(100%/2);
+            }
+
             margin-top: 0;
             margin-bottom: 0;
             color: var(--footer-adress-color);
@@ -75,7 +101,17 @@
 
 .footer-second-row {
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 0;
+      
+   @media (min-width: 768px) {
+        margin-left: 70px;
+        
+    }
+        @media (max-width: 768px) {
+            margin-top: 60px;
+    
+        }
+
 
          &__socials {
             display: flex;
@@ -84,6 +120,11 @@
             gap: 10px;
             margin-bottom: 0px;
             
+            @media (max-width: 768px) {
+                    margin-left: 50%;
+                    margin-bottom: 60px;
+            
+                }
         }
     
         &__title {
@@ -98,7 +139,16 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             margin-bottom: 20px;
-        }
+            
+         
+                    @media (max-width: 768px) {
+                            margin-left: 145px;
+                    
+                        }
+            
+                }
+
+        
     
         &__icon {
             @include flex-centered;
@@ -128,17 +178,41 @@
         &__icon:active &__socials-link {
             fill: var(--secont-title-text-color)
         }
-}
 
 
+    }
 
 .footer-inner {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+
+
+    @media (min-width:768px) {
+        
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
+    }
 }
 
-.form-footer{
+.form-footer {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+
+
+    @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            @include flex-centered;
+            margin-left: 0;
+        }
 
      &__title {
         margin-bottom: 20px;
@@ -151,6 +225,8 @@
         text-transform: uppercase;
         color: var(--secont-title-text-color);
     }
+
+   
 }
 
 .form-footer-conteiner {
@@ -169,6 +245,13 @@
             padding-bottom: 15px;
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.6);
+
+            @media (max-width: 768px) {
+                width: 450px;
+                height: 50px;
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
         }
     
         &__input:hover,
@@ -199,6 +282,10 @@
     color: var(--secont-title-text-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) scale(0.2);
 
+    @media (max-width: 768px){
+        margin-left: 140px;
+    }
+
         &:hover,
         &:focus {
             background-color: var(--button-bgc-hover);
@@ -213,7 +300,12 @@
             top: 50%;
             transform: translateY(-50%);
     
+            @media (max-width: 768px) {
+                    left: 65%;
+                    top: 95px;
+                    
+                }
         }
 }
-*/
+
 

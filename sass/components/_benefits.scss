@@ -1,24 +1,23 @@
 .benefits {
-    
-    
-    @media (max-width:480px) {
-           display: flex;
-           flex-direction: column;
-           gap: 30px;
-    }
-
-    
-    
-    
+    margin: -15px;
 }
+
 
 .list-item{
 
-    
+@media (min-width:480px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 354px;
+    height: 120px;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+}
+     
 
 
-
-     &__icon-section {
+    &__icon-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -41,6 +40,9 @@
             fill: var(--title-text-color);
 
     }
+}
+
+
 
     .text{
         display: inline-block;
@@ -48,7 +50,7 @@
         height: auto;
     }
 
-}
+
 
 
 
