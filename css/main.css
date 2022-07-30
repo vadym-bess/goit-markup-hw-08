@@ -1063,12 +1063,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    width: 170px;
+    height: 92px;
   }
 }
 .our-clients__link:hover {
