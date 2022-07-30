@@ -1,33 +1,56 @@
-.our-team {
-    @media (min-width: 768px) {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
-        
-        }
-
-            &__profesions {
-            margin-bottom: 16px;
-            text-align: center;
-            color: var(--text-color);
-            font-family: 'Roboto', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.19;
-            letter-spacing: 0.03em;
-        }
-
-                    &__card {
-                    display: block;
-                    padding-bottom: 30px;
-                    margin-right: 0;
-                    width: 100%;
-        
-                }            
-                                 
-}
     
+    .our-team {
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px
+       }
+        @media (min-width: 1200px) {
+            display: flex;
+            flex-direction: raw;
+            margin: -15px
+        }
+
+
+       
+    &__thumb{
+        @media (min-width: 768px) {
+            width: calc((100% - 4 * 15px)/2);
+            margin: 15px;
+        }
+
+        @media (min-width: 1200px) {
+                display: flex;
+                flex-direction: column;
+                width: calc((100% - 8 * 15px)/4);
+                margin: 15px;
+        }
+    }
+
+
+    &__profesions {
+        margin-bottom: 16px;
+        text-align: center;
+        color: var(--text-color);
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    }
+
+    &__card {
+        display: block;
+        padding-bottom: 30px;
+        margin-right: 0;
+        width: 100%;
+
+    }
+
+
+    
+}
 .our-team>li {
     background-color: var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

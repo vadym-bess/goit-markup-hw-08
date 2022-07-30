@@ -2,10 +2,12 @@
     display: block;
     justify-content: space-evenly;
     gap: 30px;
+    margin: -15px;
     
 }
 
 .list-item{
+
 
      &__icon-section {
         display: flex;
@@ -14,7 +16,23 @@
         border-radius: 4px;
         margin-bottom: 30px;
         background-color: var(--portfolio-buttons-bgc);
-        width: 100%;
+        width: 450px;
+        height: 120px;
+        margin: -15px;
+
+        @media (min-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+                width: calc((100% - 4 * 15px) / 2);
+                width: 354px;
+                height: 120px;
+            }
+    }
+
+    .text{
+        display: inline-block;
+        max-width: 450px;
+        height: auto;
     }
 
     &__icon-antenna,
