@@ -5,10 +5,16 @@
 
 .footer-logo{
 
-    @media (max-width: 767px) {
-        margin-left: 163px;
-        margin-bottom: 20px;
+    @media (min-width: 480px) {
+        margin-left: 0;
     }
+
+    @media (min-width: 768px) {
+        margin-left: 0;
+        
+    }
+
+
 
     &__web--blue {
         display: flex;
@@ -29,6 +35,13 @@
 }
 
 .footer-adress__thumb{
+    
+    @media (min-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        @include flex-centered;
+    }
+
     @media (min-width: 768px) {
         display: flex;
         flex-direction: column;
@@ -45,26 +58,29 @@
 
 
 .footer-first-row {
-    display: block;
+
+    @media (min-width:480px) {
+        display: flex;
+        flex-direction: column;
+        @include flex-centered;
+    }
+    
 
     @media (min-width: 768px) {
         display: flex;
         flex-direction: column;
         @include flex-centered;
-        margin-left: -15px;
     }
 
     @media (min-width: 1200px) {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-left: 0px;
     }
 
         &__adress {
 
            @media (max-width: 767px) {  
-                   margin-left: 124px;
                    margin-bottom: 8px;
                 }
 
@@ -81,9 +97,14 @@
     
         &__mail {
             
-            @media (max-width: 767px) {
-                    margin-left: 47%;
-                    margin-bottom: 8px;
+            @media (min-width: 480px){
+                display: flex;
+                @include flex-centered;
+            }
+
+            @media (min-width: 768px) {
+                    display: flex;
+                    @include flex-centered;
                 }
 
             margin-top: 0;
@@ -98,11 +119,6 @@
         }
     
         &__tel {
-
-            @media (max-width: 767px) {
-                    margin: calc(100%/2);
-                    
-            }
 
             margin-top: 0;
             margin-bottom: 0;
@@ -125,21 +141,18 @@
 
 
 .footer-second-row {
-    display: inline-block;
-    margin-left: 0;
       
         @media (min-width: 480px) {
                 display: flex;
                 flex-direction: column;
                 @include flex-centered;
                 margin-top: 60px;
-                margin-left: 120px
             }
     
         @media (min-width: 768px) {
                display: flex;
                flex-direction: column;
-               margin-top: 0;
+               margin-top: -45px;
                @include flex-centered;
                
             }
@@ -227,25 +240,20 @@
     }
 
 .footer-inner {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
 
-
+    @media (min-width:480px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include flex-centered;
+    }
+    
     @media (min-width:768px) {
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         
-    }
-
-    @media (max-width: 767px) {
-        display: flex;
-        justify-items: center;
-        flex-direction: column;
-        align-items: baseline;
-        justify-content: space-between;
     }
 
     @media (min-width: 1200px) {
@@ -256,15 +264,12 @@
 }
 
 .form-footer {
-    display: block;
-    margin-left: 93px;
-    margin-right: 0;
+
 
     @media (min-width: 480px) {
             display: flex;
             flex-direction: column;
             @include flex-centered;
-            margin-left: 0;
             margin-top: 60px;
         }
 
@@ -278,7 +283,7 @@
     @media (min-width: 1200px) {
             display: flex;
             align-items: flex-start;
-            margin-top: 0;
+            margin-top: -43px;
             margin-left: 0;
            
         }
@@ -336,7 +341,7 @@
                     flex-direction: column;
                     @include flex-centered;
                     margin-left: 0;
-                    width: 450px;
+                    max-width: 450px;
                 }
 
             @media (min-width: 768px){
@@ -388,7 +393,7 @@
     @media (min-width: 480px) {
         display: flex;
         @include flex-centered;
-        margin-left: 125px;
+        margin-left: 85px;
         margin-top: 20px;
     }
     
@@ -417,7 +422,7 @@
             transform: translateY(-50%);
 
             @media (min-width: 480px) {
-                left: 63%;
+                left: 65%;
                 top: 95px;
             }
     
