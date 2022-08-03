@@ -30,9 +30,8 @@
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image:
-    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)); 
-    background-image:url('../images/hero-section.jpeg');
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url('../images/hero-section.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -43,6 +42,21 @@
     @include for-pixel-ratio-2 {
             background-image: url('../images/header-img@2x.jpeg') ;
         }
+
+        @media (min-width:480px) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../images/hero-section.jpeg');
+
+        @include for-pixel-ratio-2 {
+                            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                                    url('../images/hero-section.jpeg');
+                        }
+        }
+
+        @media screen and(max-width:479px) {
+                padding: 34px 30px;
+                width: 100%;
+            }
 }
 
 .hero-button {

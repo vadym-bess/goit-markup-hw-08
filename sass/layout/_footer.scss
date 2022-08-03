@@ -1,6 +1,10 @@
 .footer {
     padding: 60px 0;
     background-color: var(--secondary-section-background);
+
+    @media (max-width: 479px){
+        width: 100%;
+    }
 }
 
 .footer-logo{
@@ -329,7 +333,7 @@
         }
 
          &__input {
-            min-width: 358px;
+            width: 358px;
             min-height: 50px;
             background: var(--secondary-section-background);
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -420,7 +424,7 @@
         &__icon {
             position: absolute;
             width: 24px;
-            height: 24px;
+            height: 100%;
             right: 18px;
             top: 50%;
             transform: translateY(-50%);

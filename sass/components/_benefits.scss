@@ -35,6 +35,18 @@
 
 .list-item{
 
+@media (min-width:480px) {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        width: 100%;
+        height: auto;
+        margin: 30px, 15px;
+        margin-bottom: 30px;
+    
+    }
+
+
 @media (min-width:768px) {
     display: flex;
     flex-direction: column;
@@ -68,6 +80,10 @@
         background-color: var(--portfolio-buttons-bgc);
         width: 450px;
         height: 120px;
+
+    @media (max-width:479px) {
+        width: 100%;
+    }    
     
     
     @media (min-width:768px) {
