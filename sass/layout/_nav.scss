@@ -5,7 +5,6 @@
 .nav-links {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .menu-links {
@@ -221,7 +220,12 @@
     
     &__icon{
         position: absolute;
+        top: 0;
         
+        @media (min-width:480px) {
+        position: absolute;
+        top: 0;
+        }
     }
     
 
@@ -240,19 +244,14 @@
 }
 
 
-.menu-conteiner__links{
-    display: flex;
-    flex-direction: column;
-
-}
-
 .burger-menu .icon-cross{
     display: none;
 }
 
 .burger-menu.is-open .icon-cross{
     display: block;
-    
+    position: absolute;
+    top: 0;
 }
 
 .burger-menu.is-open .icon-menu{
@@ -264,38 +263,50 @@
 
 .menu-conteiner{
     display: none;
-    padding: 48px 40px;
-    position: absolute;
-    left:0;
-    background-color: var(--background-color);
-    width: 100%;
-    height: 796px;
-    z-index: 1;
-    position: fixed;
 
-    &.is-open{
-        
-
-        @media (max-width:479px) {
-                width: 100%;
-        
-            }
-        
-            @media(min-width:768px) {
+    @media (max-width:767px) {
                 display: none;
-            }
-        
-            @media (max-width:767px) {
+                padding: 34px 30px;
+                position: absolute;
+                left: 0;
+                background-color: var(--background-color);
+                width: 100%;
+                height: 796px;
+                z-index: 1;
+                position: fixed;
+        }
+
+            &__links {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                width: 100%;
-                top: 0;
-            }
+        }
+}
+
+.menu-conteiner.is-open{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 48px 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: var(--background-color);
+            width: 100%;
+            height: 796px;
+            z-index: 1;
+            position: fixed;
+            width: 100%;
+            height: 100%;  
+
+            @media (min-width:768px) {
+                    display: none;
+                }
     }    
 
+   
+
     
-    }
+
 
     
 
@@ -404,9 +415,3 @@
 
 
 }
-
-
-.studio{
-    margin-top: 48px;
-}
-
