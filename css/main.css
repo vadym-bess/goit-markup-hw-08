@@ -2539,6 +2539,7 @@ body {
 .card-bottom {
   overflow: hidden;
   left: 0;
+  height: 110px;
   bottom: 10px;
   margin-top: 0;
   padding-top: 20px;
