@@ -806,6 +806,7 @@ body {
 @media (max-width: 479px) {
   .form-footer-button__icon {
     top: 95px;
+    right: 30px;
   }
 }
 @media (min-width: 480px) {
