@@ -10,7 +10,6 @@
 .menu-links {
     display: none;
     
-
     @media (min-width: 768px) {
             display: flex;
             gap: 50px;
@@ -54,7 +53,7 @@
             border-radius: 2px;
 
             @media (max-width:1200px) {
-            position: absolute;
+                position: absolute;
                 content: "";
                 width: 100%;
                 height: 4px;
@@ -121,9 +120,10 @@
                                     font-size: 14px;
                                     line-height: 1.14;
                                     align-items: center;
-            }
-            
-        }
+                            }
+                        }
+
+
             &__link-mail{
                     display: none;
                     gap: 10px;
@@ -165,26 +165,24 @@
             color: var(--accent-color);
         }
 
-                 &__item {
-                     display: none;
+        &__item {
+            display: none;
         
-                     @media (min-width: 768px) {
-                         display: flex;
-                         align-items: center;
-                         fill: var(--text-color);
-                         margin-bottom: 10px;
-
-                        
-                     }
-                 }
+            @media (min-width: 768px) {
+                    display: flex;
+                    align-items: center;
+                    fill: var(--text-color);
+                    margin-bottom: 10px;
+                }
+            }
         
-                 &__item:hover {
-                     fill: var(--accent-color);
-                 }
+        &__item:hover {
+            fill: var(--accent-color);
+        }
         
-                 &__icon-smartphone:hover {
-                     fill: var(--accent-color);
-                 }
+        &__icon-smartphone:hover {
+            fill: var(--accent-color);
+        }
 }
 
 .adress-head li:not(:last-child) {
@@ -222,7 +220,7 @@
         position: absolute;
         top: 0;
 
-        @media (min-width:480px) {
+    @media (min-width:480px) {
         position: absolute;
         top: 0;
         }
@@ -300,10 +298,10 @@
                     display: none;
                 }
 
-                        @media (max-width: 767px) {
-                            display: flex;
-                            align-items: flex-start;
-                        }
+            @media (max-width: 767px) {
+                    display: flex;
+                    align-items: flex-start;
+                }
     }    
 
    
