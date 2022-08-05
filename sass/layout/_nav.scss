@@ -215,22 +215,18 @@
         justify-content: center;
         align-items: flex-start;
     }
+
+    @media (min-width:768px) {
+        display: none;
+    }
     
     &__icon{
         position: absolute;
         top: 0;
 
-    @media (min-width:480px) {
-        position: absolute;
-        top: 0;
-        }
-    }
-    
-
-    @media (min-width:768px) {
-            display: none;
-        }
         
+        
+    }
 
     &__icon:hover {
         fill: var(--accent-color);

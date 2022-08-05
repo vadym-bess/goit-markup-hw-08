@@ -1470,20 +1470,14 @@ body {
             align-items: flex-start;
   }
 }
-.burger-menu__icon {
-  position: absolute;
-  top: 0;
-}
-@media (min-width: 480px) {
-  .burger-menu__icon {
-    position: absolute;
-    top: 0;
-  }
-}
 @media (min-width: 768px) {
   .burger-menu {
     display: none;
   }
+}
+.burger-menu__icon {
+  position: absolute;
+  top: 0;
 }
 .burger-menu__icon:hover {
   fill: var(--accent-color);
