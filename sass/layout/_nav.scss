@@ -298,15 +298,7 @@
                     display: flex;
                     align-items: flex-start;
                 }
-    }    
-
-   
-
-    
-
-
-    
-
+    }   
 
 .menu-links__nav-link--mobile.is-current {
     color: var(--accent-color);
@@ -337,16 +329,11 @@
 .contacts-mobile{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-
-    
-
-    
+    justify-content: flex-start;    
 }
 
 
 .adress-head{
-
 
 &__mail--mobile{
     font-family: 'Roboto';
@@ -387,7 +374,7 @@
 
 .mobile-menu-socials{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
 
     
